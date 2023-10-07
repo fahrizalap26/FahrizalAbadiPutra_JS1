@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+          var angka1 = parseFloat(prompt("Masukkan angka pertama:"));
+          var angka2 = parseFloat(prompt("Masukkan angka kedua:"));
+          var operator = prompt("Pilih operator matematika (+, -, *, /):");
+
+
+if (operator === "+") {
+  var hasil = angka1 + angka2;
+  console.log("Hasil penjumlahan: " + hasil);
+} else if (operator === "-") {
+  var hasil = angka1 - angka2;
+  console.log("Hasil pengurangan: " + hasil);
+} else if (operator === "*") {
+  var hasil = angka1 * angka2;
+  console.log("Hasil perkalian: " + hasil);
+} else if (operator === "/") {
+  if (angka2 === 0) {
+    console.log("Pembagian oleh nol tidak diperbolehkan.");
+  } else {
+    var hasil = angka1 / angka2;
+    console.log("Hasil pembagian: " + hasil);
+  }
+} else {
+  console.log("Operator tidak valid.");
+}
+
+    </script>
+</body>
+</html>
